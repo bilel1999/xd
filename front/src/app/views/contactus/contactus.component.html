@@ -1,0 +1,27 @@
+<div class="container-fluid p-0">
+  <!-- Hero section -->
+  <section class="jumbotron text-center bg-primary text-white">
+    <div class="container">
+      <h1 class="display-4">Registre d'Acromégalie</h1>
+      <p class="lead">"Votre guide pour une gestion optimale de l'acromégalie"</p>
+      <app-nav></app-nav>
+    </div>
+  </section>
+<!-- contact-us.component.html -->
+<div class="container my-5">
+    <h2>Contact Us</h2>
+    <form [formGroup]="Form">
+      <div class="form-group">
+        <label>Name</label>
+        <input type="text" class="form-control" id="name" formControlName="nom" placeholder="Your Name">
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <input type="text" class="form-control" id="Message" formControlName="message" placeholder="Feel free to Contact us">
+      </div>
+      <div class="text-center pt-1 mb-5 pb-1">
+        <p-button label="Create" [disabled]="!Form.valid" (click)="addMessage()"></p-button>
+      </div>
+    </form>
+</div>
+</div>

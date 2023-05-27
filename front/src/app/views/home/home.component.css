@@ -1,0 +1,79 @@
+/* home.component.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+  }
+  
+  h1,
+  h2,
+  h5 {
+    
+    font-weight: bold;
+  }
+  
+  /* Hero section */
+  .jumbotron {
+    background-color: #2c3e50;
+    border-radius: 0;
+  }
+  
+  .jumbotron .lead {
+    font-size: 1.5rem;
+  }
+  
+  .jumbotron .btn {
+    font-weight: bold;
+  }
+  
+  /* Features section */
+  .container .card {
+    box-shadow: 0 4px 6px rgb(255, 255, 255);
+    border: none;
+    border-radius: 0.5rem;
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+  
+  .card-title {
+    color: #000000;
+  }
+  
+  .card-text {
+    color: #6c757d;
+  }
+  
+  /* Call-to-action section */
+  .bg-light {
+    background-color: #2c3e50 !important;
+    --primary-color: #2c3e50!important;
+
+  }
+  .cta-heading {
+    color: white !important;
+  }
+  
+  
+  
+  @media (min-width: 768px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  

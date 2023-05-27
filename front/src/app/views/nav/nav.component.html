@@ -1,0 +1,47 @@
+<!-- navbar.component.html -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" routerLink="/"><img src="assets/logo1.png" width="70" height="70" role="img" /></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contactus">Contact Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/aboutus">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/admin">Admin</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/patient">patient</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/doctor">docteur</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto" *ngIf="!authenticated">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" [routerLink]="['/signup']">Sign Up</a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-auto" *ngIf="authenticated">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/dashboard">Dashboard</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" (click)="logout()">Logout</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

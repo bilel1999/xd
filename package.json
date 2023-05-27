@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dsp.js": "^1.0.1",
+    "mongoose": "^7.0.5",
+    "mqtt": "^4.3.7",
+    "ng2-charts": "^4.1.1",
+    "python-bridge": "^1.1.0",
+    "python-shell": "^5.0.0"
+  },
+  "devDependencies": {
+    "@types/ws": "^8.5.4"
+  }
+}

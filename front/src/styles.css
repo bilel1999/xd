@@ -1,0 +1,11 @@
+@import '../node_modules/@syncfusion/ej2-material-theme/styles/material.css';
+/* You can add global styles to this file, and also import other style files */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import '~primeicons/primeicons.css';
+@import "../node_modules/primeflex/primeflex.css";
+/* You can add global styles to this file, and also import other style files */
+
+/* Add this to src/styles.css */
+.cta-heading {
+    color: white;
+  }
