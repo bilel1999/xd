@@ -1,4 +1,3 @@
-    <script src="js/leaflet-hash.js"></script>
 (function(window) {
 	var HAS_HASHCHANGE = (function() {
 		var doc_mode = window.documentMode;

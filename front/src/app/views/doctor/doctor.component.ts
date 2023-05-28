@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { UserService } from '../../core/services/user.service';
 import { User } from 'src/app/core/Model/user';
 import {MenuItem} from "primeng/api";
-
 @Component({
   selector: 'app-doctor',
   templateUrl: './doctor.component.html',
