@@ -17,25 +17,15 @@ export class DoctorComponent implements OnInit {
   ngOnInit(): void {
     this.items = [
       {
-        label: 'Doctor Dashboard',
+        label: 'User Dashboard',
         icon: 'pi pi-fw pi-user',
         routerLink: ['/doctor']
 
       },
       {
-        label: 'Patient List',
+        label: 'Carte',
         icon: 'pi pi-fw pi-users',
         routerLink: ['/patients']
-      },
-      {
-        label: 'Appointment',
-        icon: 'pi pi-fw pi-book',
-        routerLink:["/rdv"]
-      },
-      {
-        label: 'calendrier',
-        icon: 'pi pi-fw pi-book',
-        routerLink:["/addtest"]
       },
       {
         label: 'Logout',
