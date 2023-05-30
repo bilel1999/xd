@@ -105,5 +105,8 @@ renderPage(event:number){
     table.clear();
   }
 
-
+  openMap(): void {
+    const mapUrl = 'assets/index.html';
+    window.open(mapUrl, '_blank');
+  }
 }

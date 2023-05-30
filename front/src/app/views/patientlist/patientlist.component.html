@@ -1,4 +1,3 @@
-
 <!--&lt;!&ndash; Side navigation &ndash;&gt;-->
 <!--<div class="sidenav">-->
 <!--  <a href="/doctor">Doctor Dashboard</a>-->
@@ -48,12 +47,10 @@
 <!--  </div>-->
 <!--</div>-->
 
-
 <!--  <div class="main">-->
 <!--    <router-outlet></router-outlet>-->
 
 <!--  </div>-->
-
 
 <div class="grid">
   <div class="col-12">
@@ -64,69 +61,34 @@
   <div class="col-12">
     <div class="card">
       <div class="flex justify-content-center mt-3 mb-3">
-        <h3 style="color: gray">Patient List</h3>
+        <h3 style="color: gray">MAP DISPLAYING</h3>
       </div>
       <div>
-        <p-table #dt1 [value]="userList" dataKey="idUser" [rows]="10" [showCurrentPageReport]="true" [rowsPerPageOptions]="[10, 25, 50]"
-                 [paginator]="true"
-                 currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
+        <p-table
+          #dt1
+          [value]="userList"
+          dataKey="idUser"
+          [rows]="10"
+          [showCurrentPageReport]="true"
+          [rowsPerPageOptions]="[10, 25, 50]"
+          [paginator]="true"
+          currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries"
         >
           <ng-template pTemplate="caption">
             <div class="flex">
-              <button pButton label="Clear" class="p-button-outlined" icon="pi pi-filter-slash" (click)="clear(dt1)"></button>
+              <button
+                pButton
+                label="Clear"
+                class="p-button-outlined"
+                icon="pi pi-filter-slash"
+                (click)="openMap()"
+              >
+                Open Map
+              </button>
             </div>
-          </ng-template>
-          <ng-template pTemplate="header">
-            <tr>
-              <th style="min-width:5rem">
-                <div class="flex align-items-center">
-                  Pictures
-                </div>
-              </th>
-              <th style="min-width:5rem">
-                <div class="flex align-items-center">
-                  First Name
-                  <p-columnFilter type="text" field="nom" display="menu"></p-columnFilter>
-                </div>
-              </th>
-              <th style="min-width:5rem">
-                <div class="flex align-items-center">
-                  Last Name
-                  <p-columnFilter type="text" field="prenom" display="menu"></p-columnFilter>
-                </div>
-              </th>
-              <th style="min-width:5rem">
-                <div class="flex align-items-center">
-                  Email address
-                  <p-columnFilter type="text" field="mail" display="menu"></p-columnFilter>
-                </div>
-              </th>
-            </tr>
-          </ng-template>
-          <ng-template pTemplate="body" let-user>
-            <tr>
-              <td>
-                <img [src]="user.photo" alt="image" style="width: 60px ; height :60px ; border-radius: 50%">
-              </td>
-              <td>
-                {{ user.nom }}
-              </td>
-              <td>
-                {{ user.prenom }}
-              </td>
-              <td>
-                {{ user.mail }}
-              </td>
-            </tr>
-          </ng-template>
-          <ng-template pTemplate="emptymessage">
-            <tr>
-              <td colspan="7">No Patient found.</td>
-            </tr>
           </ng-template>
         </p-table>
       </div>
     </div>
   </div>
-
 </div>
